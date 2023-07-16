@@ -1,0 +1,291 @@
+:root {
+
+    --branco: hsl(0, 0%, 100%);
+    --preto: hsl(0, 0%, 0%);
+    --cinzaEscuro: hsl(0, 0%, 55%);
+    --cinzaMuitoEscuro: hsl(0, 0%, 41%);
+
+    --font400: 'Alata', sans-serif;
+    --font300: 'Josefin Sans', sans-serif;
+    ;
+}
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: var(--font300);
+    color: var(--cinzaMuitoEscuro);
+}
+
+
+input {
+
+    font-family: var(--font300);
+}
+
+input:hover {
+
+    color: var(--cinzaEscuro);
+    cursor: grabbing;
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 10px;
+    padding-left: 140px;
+    padding-right: 140px;
+    background-image: url(../images/desktop/image-hero.jpg);
+}
+
+.barra-superior {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.barra-menu {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.barra-menu input {
+
+    width: 90px;
+    height: 30px;
+    color: var(--branco);
+    background: none;
+    border: none;
+}
+
+.text-header {
+
+    display: flex;
+    height: 200px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 200px;
+    border: 2px solid white;
+    color: var(--branco);
+    letter-spacing: 2px;
+
+}
+
+
+body section:nth-of-type(1) {
+
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 80px;
+    padding-left: 140px;
+    padding-right: 140px;
+    text-align: end;
+}
+
+.about-vr {
+
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    gap: 40px;
+    position: absolute;
+    text-align: justify;
+    padding: 60px;
+    transform: translate(550px, 200px);
+}
+
+body section:nth-of-type(1) div {
+
+    display: flex;
+    background-color: white;
+    z-index: 1;
+}
+
+body section:nth-of-type(2) {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 1000px;
+    padding: 50px;
+    gap: 40px;
+
+}
+
+.barra-our-creations {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 89px;
+    padding-right: 89px;
+}
+
+.bt-see-all {
+
+    background: none;
+    border: solid 1px var(--cinzaMuitoEscuro);
+    width: 90px;
+    height: 30px;
+}
+
+.vr-tipos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.vr-tipos div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.vr-tipos div:nth-of-type(2) {
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.deep-earth,
+.night-arcade,
+.soccer-team-vr,
+.the-grid,
+.from-up-above-vr,
+.rocket-borealis,
+.the-curiosity,
+.make-it-fisheye {
+
+    display: flex;
+    align-items: end;
+    width: 250px;
+    height: 400px;
+    color: var(--branco);
+    padding: 10px;
+    background-size: cover;
+}
+
+.deep-earth {
+
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+}
+
+.night-arcade {
+
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+}
+
+.soccer-team-vr {
+
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+}
+
+.the-grid {
+
+    background-image: url(../images/desktop/image-grid.jpg);
+}
+
+.from-up-above-vr {
+
+    background-image: url(../images/desktop/image-from-above.jpg);
+}
+
+.rocket-borealis {
+
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+}
+
+.the-curiosity {
+
+    background-image: url(../images/desktop/image-curiosity.jpg);
+}
+
+.make-it-fisheye {
+
+    background-image: url(../images/desktop/image-fisheye.jpg);
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 30px;
+    padding-left: 140px;
+    padding-right: 140px;
+    gap: 30px;
+    height: 200px;
+}
+
+footer input {
+
+    background: none;
+    border: none;
+    color: var(--branco);
+}
+
+.icones {
+
+    display: flex;
+    gap: 20px;
+}
+
+.icones i{ cursor: grabbing; }
+
+
+.barra-superior-footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.barra-inferior-footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.barra-inferior-footer div {
+
+    display: flex;
+    gap: 20px;
+}
+
+.bt-hamb {
+
+    display: none;
+}
+
+.bt-see-all-mobile {
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
